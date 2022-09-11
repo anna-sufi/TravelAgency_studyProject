@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>"Around The World"</h1>
+    </div>
+    <div class="header">
+        <h3><span class='star'>⭐⭐⭐⭐⭐</span> travel agency <span class='star'>⭐⭐⭐⭐⭐</span></h3>
+    </div>
+    <div class="header">
+        <h4>Have an unforgettable experience and lifelong memories with our tours! </h4>
+    </div>
+
+    <div class="container">
+        <div class="item one">
+            <h4 class='country'>Hawaii</h4>
+            <p class='par'>wonderful beaches, volcanic landscapes, lush green hills</p>
+            <h3 class='price'> 1200$</h3>
+        </div>
+        <div class="item two">
+            <h4 class='country'>Maldives</h4>
+            <p class='par'>tropical paradise with white sandy beaches</p>
+            <h3 class='price'> 2000$</h3>
+        </div>
+        <div class="item three">
+            <h4 class='country'>India</h4>
+            <p class='par'>home to some of the earliest civilizations on the earth</p>
+            <h3 class='price'> 1000$</h3>
+        </div>
+        <div class="item four">
+            <h4 class='country'>Greece</h4>
+            <p class='par'>amazing beaches and clear-blue waters</p>
+            <h3 class='price'> 1500$</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="item five">
+            <h4 class='country'>Dubai</h4>
+            <p class='par'>ultra-modern architecture, exotic and lively nightlife, magnificent bird eye view of the beautiful skylines</p>
+            <h3 class='price'> 1800$</h3>
+        </div>
+        <div class="item six">
+            <h4 class='country'>Morocco</h4>
+            <p class='par'>paradise beaches, sweeping expanses of desert and mountains</p>
+            <h3 class='price'> 1300$</h3>
+        </div>
+        <div class="item seven">
+            <h4 class='country'>Thailand</h4>
+            <p class='par'>tropical beauty, ancient temples, amazing food scene and vibrant nightlife</p>
+            <h3 class='price'> 1800$</h3>
+        </div>
+        <div class="item eight">
+            <h4 class='country'>Australia</h4>
+            <p class='par'>world-class surfing, unique marine life, striking ocean pools and unbeatable beach culture</p>
+            <h3 class='price'> 2100$</h3>
+        </div>
+    </div>
+    <br>
+
+    <div class="header">
+        <h3>Write us</h3>
+    </div>
+    
+
+<div class="header">
+    <form
+  action="https://formspree.io/f/mnqrjraw"
+  method="POST"
+>
+<input type="hidden" name="_language" value="en" />
+  <label>
+   Your email:
+    <input class='textinp' type="email" name="email" placeholder='your email...' required=''>
+  </label>
+
+  <label>
+   Direction:
+   <select name="direction" id="direction">
+       <option value="Hawaii">Hawaii</option>
+       <option value="Maldives">Maldives</option>
+       <option value="India">India</option>
+       <option value="Greece">Greece</option>
+       <option value="Dubai">Dubai</option>
+       <option value="Morocco">Morocco</option>
+       <option value="Thailand">Thailand</option>
+       <option value="Australia">Australia</option>
+       <option value="no">can't decide...</option>
+   </select>
+  </label>
+   
+  <label>
+  Your message: 
+    <textarea class='textinp' name="message" placeholder='type your message...' required=''></textarea>
+  </label>
+
+  <button class='btn' type="submit">Send</button>
+
+</form>
+</div>
+
+    <script src='index.js'></script>
+</body>
+</html>

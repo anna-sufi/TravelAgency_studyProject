@@ -1,0 +1,251 @@
+body {
+    background-color: #0a3a5a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3, h4, h5, p, label, select, input, textarea{
+    font-family: 'Edu QLD Beginner', cursive;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 10px #438fc2;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+}
+h3 {
+    text-shadow: 2px 2px 10px #3282B8;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.star {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    flex:1;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.one {
+    background-image: url('https://images.unsplash.com/photo-1576224975829-675f460f9288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+}
+.two {
+    background-image: url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80');
+}
+.three {
+    background-image: url('https://images.unsplash.com/photo-1515091943-9d5c0ad475af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+}
+.four {
+    background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+}
+.five {
+    background-image: url('https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+}
+.six {
+    background-image: url('https://images.unsplash.com/photo-1568241360857-e23e825c4e08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80');
+}
+.seven {
+    background-image: url('https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+}
+.eight {
+    background-image: url('https://images.unsplash.com/photo-1591701729564-3b5325d5a4bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80');
+}
+
+.country {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    color: #0a3a5a;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 0;
+    font-weight: 700;
+    text-align: start;
+    margin: 5px 0;
+}
+.par {
+    position: absolute;
+    top:60px;
+    left: 10px;
+    right: 5px;
+    color: #0a3a5a;
+    background-color: rgba(255, 255, 255, 0.79);
+    border-radius: 10px;
+    font-size: 0;
+    margin: 5px 0;
+}
+.price {
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+    color: #0a3a5a;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 0px;
+    margin: 5px 0;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+.selected {
+    flex:2;
+}
+
+.selected .country, .selected .price {
+    font-size: 25px;
+    transition: all 1s ease-in;
+    padding: 5px;
+}
+.selected .par {
+    font-size: 18px;
+    transition: all 1s ease-in;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+}
+
+label {
+    font-size: 25px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.textinp, select {
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    padding: 12px 20px;
+    margin: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: white;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+    align-self: center;
+    width: 50%;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: rgb(250, 243, 26);
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    .star {
+        font-size: 20px;
+    }
+    .selected .country, .selected .price {
+        font-size: 20px;
+    }
+    .selected .par {
+        font-size: 16px;
+    }
+    form {
+        width: 400px;
+    }
+    label {
+        font-size: 20px;
+    }
+    .textinp, select {
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 17px;
+    }
+    .btn {
+        font-size: 25px;
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .star {
+        font-size: 15px;
+    }
+    .selected .country, .selected .price {
+        font-size: 16px;
+    }
+    .selected .par {
+        font-size: 14px;
+    }
+    form {
+        width: 250px;
+    }
+    .selected {
+        flex:3;
+    }
+    label {
+        font-size: 18px;
+    }
+    .textinp, select {
+        padding: 8px 12px;
+        margin: 3px;
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-top: 8px;
+    }
+}
+
+
+
